@@ -38,7 +38,19 @@ h1 {
     object-fit: cover;
 }
 
-
 .square {
     border-radius: 0 !important;
+    animation: glowBlink 1.4s infinite ease-in-out;
 }
+@keyframes glowBlink {
+    0% {
+        box-shadow: 0 0 5px 2px red;
+    }
+    50% {
+        box-shadow: 0 0 22px 10px blue;
+    }
+    100% {
+        box-shadow: 0 0 5px 2px green;
+    }
+}
+
