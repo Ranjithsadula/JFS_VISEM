@@ -3,10 +3,10 @@ GIT COMMANDS
  git init 
  git add .
  git commit -m "message"
- git remote add orgin <remote url>
+ git remote add origin <remote url>
  
  Example:
- git  remote add orging https:github.com/Ranjithsadula/JFS_VISEM
+ git  remote add origin https:github.com/Ranjithsadula/JFS_VISEM
  
  git push orgin master
  you can check in remote repository
@@ -17,7 +17,7 @@ GIT COMMANDS
   git status
   git add .
   git commit -m "msg"
-  git push orgin master
+  git push origin master
   
   -------------------------------------------------
   if you want to retreive the remote repo to local 
