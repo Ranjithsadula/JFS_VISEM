@@ -7,8 +7,8 @@ GIT COMMANDS
  
  Example:
  git  remote add origin https:github.com/Ranjithsadula/JFS_VISEM
- 
- git push orgin master
+
+ git push origin master
  you can check in remote repository
  
  --------------------------------------------------------------------

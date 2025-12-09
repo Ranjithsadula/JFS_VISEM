@@ -41,3 +41,12 @@ button{
 button:hover{
     background: blue;
 }
+#resultMessage{
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    background:  lightgrey;
+    font-size: 16 px;
+    display: none;
+    white-space: pre-line;
+}   

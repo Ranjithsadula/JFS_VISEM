@@ -1,5 +1,6 @@
 let subjects = document.querySelectorAll(".subject");
 let totalbox = document.getElementById("total");
+let messagebox = document.getElementById("resultMessage");
 subjects.forEach(item => {
     item.addEventListener('change', ()=>{
         let total = 0;      
@@ -25,7 +26,10 @@ document.getElementById("regForm").addEventListener('submit', function(e) {
         }
     });
     if(selectedSubjects.length === 0){
-        alert("Please select at least one subject");
+        //alert("Please select at least one subject");
+        messagebox.style.display="block";
+        messagebox.style.background="red";
+        messagebox.innerText="Please select at least one subject";
         return;
     }
     let studentName=document.getElementById("name").value;
@@ -33,7 +37,9 @@ document.getElementById("regForm").addEventListener('submit', function(e) {
     "Student Name: " + studentName + "\n\n" +
     "Selected Subjects:\n- " + selectedSubjects.join("\n-") + "\n\n" +
     "Total Fee: $" + totalFee;
-    alert(message); 
-    
+    //alert(message); 
+    messagebox.style.display="block";
+    messagebox.innerText=message;
+
 }
 );
